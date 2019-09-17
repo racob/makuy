@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F780690B2331278900B2A8F9 /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780690A2331278900B2A8F9 /* HomeTVC.swift */; };
+		F780690E2331283600B2A8F9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780690C2331283600B2A8F9 /* CustomCell.swift */; };
+		F780690F2331283600B2A8F9 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F780690D2331283600B2A8F9 /* CustomCell.xib */; };
 		F7D02A262330CAEC00DFFC55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A252330CAEC00DFFC55 /* AppDelegate.swift */; };
-		F7D02A282330CAEC00DFFC55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A272330CAEC00DFFC55 /* ViewController.swift */; };
 		F7D02A2B2330CAEC00DFFC55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D02A292330CAEC00DFFC55 /* Main.storyboard */; };
 		F7D02A2E2330CAEC00DFFC55 /* makuy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A2C2330CAEC00DFFC55 /* makuy.xcdatamodeld */; };
 		F7D02A302330CAEE00DFFC55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D02A2F2330CAEE00DFFC55 /* Assets.xcassets */; };
@@ -35,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F780690A2331278900B2A8F9 /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
+		F780690C2331283600B2A8F9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		F780690D2331283600B2A8F9 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		F7D02A222330CAEC00DFFC55 /* makuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = makuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D02A252330CAEC00DFFC55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7D02A272330CAEC00DFFC55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7D02A2A2330CAEC00DFFC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7D02A2D2330CAEC00DFFC55 /* makuy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = makuy.xcdatamodel; sourceTree = "<group>"; };
 		F7D02A2F2330CAEE00DFFC55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,12 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				F7D02A252330CAEC00DFFC55 /* AppDelegate.swift */,
-				F7D02A272330CAEC00DFFC55 /* ViewController.swift */,
 				F7D02A292330CAEC00DFFC55 /* Main.storyboard */,
 				F7D02A2F2330CAEE00DFFC55 /* Assets.xcassets */,
 				F7D02A312330CAEE00DFFC55 /* LaunchScreen.storyboard */,
 				F7D02A342330CAEE00DFFC55 /* Info.plist */,
 				F7D02A2C2330CAEC00DFFC55 /* makuy.xcdatamodeld */,
+				F7D02A582330CF3500DFFC55 /* Homescreen */,
 			);
 			path = makuy;
 			sourceTree = "<group>";
@@ -126,6 +130,16 @@
 				F7D02A4A2330CAEE00DFFC55 /* Info.plist */,
 			);
 			path = makuyUITests;
+			sourceTree = "<group>";
+		};
+		F7D02A582330CF3500DFFC55 /* Homescreen */ = {
+			isa = PBXGroup;
+			children = (
+				F780690A2331278900B2A8F9 /* HomeTVC.swift */,
+				F780690C2331283600B2A8F9 /* CustomCell.swift */,
+				F780690D2331283600B2A8F9 /* CustomCell.xib */,
+			);
+			path = Homescreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +248,7 @@
 			files = (
 				F7D02A332330CAEE00DFFC55 /* LaunchScreen.storyboard in Resources */,
 				F7D02A302330CAEE00DFFC55 /* Assets.xcassets in Resources */,
+				F780690F2331283600B2A8F9 /* CustomCell.xib in Resources */,
 				F7D02A2B2330CAEC00DFFC55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7D02A282330CAEC00DFFC55 /* ViewController.swift in Sources */,
+				F780690B2331278900B2A8F9 /* HomeTVC.swift in Sources */,
 				F7D02A262330CAEC00DFFC55 /* AppDelegate.swift in Sources */,
+				F780690E2331283600B2A8F9 /* CustomCell.swift in Sources */,
 				F7D02A2E2330CAEC00DFFC55 /* makuy.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
