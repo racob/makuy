@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F7D02A262330CAEC00DFFC55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A252330CAEC00DFFC55 /* AppDelegate.swift */; };
+		F7D02A282330CAEC00DFFC55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A272330CAEC00DFFC55 /* ViewController.swift */; };
+		F7D02A2B2330CAEC00DFFC55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D02A292330CAEC00DFFC55 /* Main.storyboard */; };
+		F7D02A2E2330CAEC00DFFC55 /* makuy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A2C2330CAEC00DFFC55 /* makuy.xcdatamodeld */; };
+		F7D02A302330CAEE00DFFC55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D02A2F2330CAEE00DFFC55 /* Assets.xcassets */; };
+		F7D02A332330CAEE00DFFC55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D02A312330CAEE00DFFC55 /* LaunchScreen.storyboard */; };
+		F7D02A3E2330CAEE00DFFC55 /* makuyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A3D2330CAEE00DFFC55 /* makuyTests.swift */; };
+		F7D02A492330CAEE00DFFC55 /* makuyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A482330CAEE00DFFC55 /* makuyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7D02A3A2330CAEE00DFFC55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7D02A1A2330CAEC00DFFC55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7D02A212330CAEC00DFFC55;
+			remoteInfo = makuy;
+		};
+		F7D02A452330CAEE00DFFC55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7D02A1A2330CAEC00DFFC55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7D02A212330CAEC00DFFC55;
+			remoteInfo = makuy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F7D02A222330CAEC00DFFC55 /* makuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = makuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D02A252330CAEC00DFFC55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7D02A272330CAEC00DFFC55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7D02A2A2330CAEC00DFFC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7D02A2D2330CAEC00DFFC55 /* makuy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = makuy.xcdatamodel; sourceTree = "<group>"; };
+		F7D02A2F2330CAEE00DFFC55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7D02A322330CAEE00DFFC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7D02A342330CAEE00DFFC55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D02A392330CAEE00DFFC55 /* makuyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = makuyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D02A3D2330CAEE00DFFC55 /* makuyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makuyTests.swift; sourceTree = "<group>"; };
+		F7D02A3F2330CAEE00DFFC55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D02A442330CAEE00DFFC55 /* makuyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = makuyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7D02A482330CAEE00DFFC55 /* makuyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makuyUITests.swift; sourceTree = "<group>"; };
+		F7D02A4A2330CAEE00DFFC55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7D02A1F2330CAEC00DFFC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D02A362330CAEE00DFFC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D02A412330CAEE00DFFC55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7D02A192330CAEC00DFFC55 = {
+			isa = PBXGroup;
+			children = (
+				F7D02A242330CAEC00DFFC55 /* makuy */,
+				F7D02A3C2330CAEE00DFFC55 /* makuyTests */,
+				F7D02A472330CAEE00DFFC55 /* makuyUITests */,
+				F7D02A232330CAEC00DFFC55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7D02A232330CAEC00DFFC55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7D02A222330CAEC00DFFC55 /* makuy.app */,
+				F7D02A392330CAEE00DFFC55 /* makuyTests.xctest */,
+				F7D02A442330CAEE00DFFC55 /* makuyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7D02A242330CAEC00DFFC55 /* makuy */ = {
+			isa = PBXGroup;
+			children = (
+				F7D02A252330CAEC00DFFC55 /* AppDelegate.swift */,
+				F7D02A272330CAEC00DFFC55 /* ViewController.swift */,
+				F7D02A292330CAEC00DFFC55 /* Main.storyboard */,
+				F7D02A2F2330CAEE00DFFC55 /* Assets.xcassets */,
+				F7D02A312330CAEE00DFFC55 /* LaunchScreen.storyboard */,
+				F7D02A342330CAEE00DFFC55 /* Info.plist */,
+				F7D02A2C2330CAEC00DFFC55 /* makuy.xcdatamodeld */,
+			);
+			path = makuy;
+			sourceTree = "<group>";
+		};
+		F7D02A3C2330CAEE00DFFC55 /* makuyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7D02A3D2330CAEE00DFFC55 /* makuyTests.swift */,
+				F7D02A3F2330CAEE00DFFC55 /* Info.plist */,
+			);
+			path = makuyTests;
+			sourceTree = "<group>";
+		};
+		F7D02A472330CAEE00DFFC55 /* makuyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7D02A482330CAEE00DFFC55 /* makuyUITests.swift */,
+				F7D02A4A2330CAEE00DFFC55 /* Info.plist */,
+			);
+			path = makuyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7D02A212330CAEC00DFFC55 /* makuy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D02A4D2330CAEE00DFFC55 /* Build configuration list for PBXNativeTarget "makuy" */;
+			buildPhases = (
+				F7D02A1E2330CAEC00DFFC55 /* Sources */,
+				F7D02A1F2330CAEC00DFFC55 /* Frameworks */,
+				F7D02A202330CAEC00DFFC55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = makuy;
+			productName = makuy;
+			productReference = F7D02A222330CAEC00DFFC55 /* makuy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7D02A382330CAEE00DFFC55 /* makuyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D02A502330CAEE00DFFC55 /* Build configuration list for PBXNativeTarget "makuyTests" */;
+			buildPhases = (
+				F7D02A352330CAEE00DFFC55 /* Sources */,
+				F7D02A362330CAEE00DFFC55 /* Frameworks */,
+				F7D02A372330CAEE00DFFC55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7D02A3B2330CAEE00DFFC55 /* PBXTargetDependency */,
+			);
+			name = makuyTests;
+			productName = makuyTests;
+			productReference = F7D02A392330CAEE00DFFC55 /* makuyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7D02A432330CAEE00DFFC55 /* makuyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D02A532330CAEE00DFFC55 /* Build configuration list for PBXNativeTarget "makuyUITests" */;
+			buildPhases = (
+				F7D02A402330CAEE00DFFC55 /* Sources */,
+				F7D02A412330CAEE00DFFC55 /* Frameworks */,
+				F7D02A422330CAEE00DFFC55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7D02A462330CAEE00DFFC55 /* PBXTargetDependency */,
+			);
+			name = makuyUITests;
+			productName = makuyUITests;
+			productReference = F7D02A442330CAEE00DFFC55 /* makuyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7D02A1A2330CAEC00DFFC55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Eibiel Sardjanto";
+				TargetAttributes = {
+					F7D02A212330CAEC00DFFC55 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					F7D02A382330CAEE00DFFC55 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = F7D02A212330CAEC00DFFC55;
+					};
+					F7D02A432330CAEE00DFFC55 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = F7D02A212330CAEC00DFFC55;
+					};
+				};
+			};
+			buildConfigurationList = F7D02A1D2330CAEC00DFFC55 /* Build configuration list for PBXProject "makuy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7D02A192330CAEC00DFFC55;
+			productRefGroup = F7D02A232330CAEC00DFFC55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7D02A212330CAEC00DFFC55 /* makuy */,
+				F7D02A382330CAEE00DFFC55 /* makuyTests */,
+				F7D02A432330CAEE00DFFC55 /* makuyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7D02A202330CAEC00DFFC55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D02A332330CAEE00DFFC55 /* LaunchScreen.storyboard in Resources */,
+				F7D02A302330CAEE00DFFC55 /* Assets.xcassets in Resources */,
+				F7D02A2B2330CAEC00DFFC55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D02A372330CAEE00DFFC55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D02A422330CAEE00DFFC55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7D02A1E2330CAEC00DFFC55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D02A282330CAEC00DFFC55 /* ViewController.swift in Sources */,
+				F7D02A262330CAEC00DFFC55 /* AppDelegate.swift in Sources */,
+				F7D02A2E2330CAEC00DFFC55 /* makuy.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D02A352330CAEE00DFFC55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D02A3E2330CAEE00DFFC55 /* makuyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7D02A402330CAEE00DFFC55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D02A492330CAEE00DFFC55 /* makuyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7D02A3B2330CAEE00DFFC55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7D02A212330CAEC00DFFC55 /* makuy */;
+			targetProxy = F7D02A3A2330CAEE00DFFC55 /* PBXContainerItemProxy */;
+		};
+		F7D02A462330CAEE00DFFC55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7D02A212330CAEC00DFFC55 /* makuy */;
+			targetProxy = F7D02A452330CAEE00DFFC55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F7D02A292330CAEC00DFFC55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D02A2A2330CAEC00DFFC55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F7D02A312330CAEE00DFFC55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7D02A322330CAEE00DFFC55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7D02A4B2330CAEE00DFFC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7D02A4C2330CAEE00DFFC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7D02A4E2330CAEE00DFFC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BTQXWQ8C2;
+				INFOPLIST_FILE = makuy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = racob.makuy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7D02A4F2330CAEE00DFFC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BTQXWQ8C2;
+				INFOPLIST_FILE = makuy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = racob.makuy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F7D02A512330CAEE00DFFC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BTQXWQ8C2;
+				INFOPLIST_FILE = makuyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = racob.makuyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/makuy.app/makuy";
+			};
+			name = Debug;
+		};
+		F7D02A522330CAEE00DFFC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BTQXWQ8C2;
+				INFOPLIST_FILE = makuyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = racob.makuyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/makuy.app/makuy";
+			};
+			name = Release;
+		};
+		F7D02A542330CAEE00DFFC55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BTQXWQ8C2;
+				INFOPLIST_FILE = makuyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = racob.makuyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = makuy;
+			};
+			name = Debug;
+		};
+		F7D02A552330CAEE00DFFC55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BTQXWQ8C2;
+				INFOPLIST_FILE = makuyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = racob.makuyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = makuy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7D02A1D2330CAEC00DFFC55 /* Build configuration list for PBXProject "makuy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D02A4B2330CAEE00DFFC55 /* Debug */,
+				F7D02A4C2330CAEE00DFFC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7D02A4D2330CAEE00DFFC55 /* Build configuration list for PBXNativeTarget "makuy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D02A4E2330CAEE00DFFC55 /* Debug */,
+				F7D02A4F2330CAEE00DFFC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7D02A502330CAEE00DFFC55 /* Build configuration list for PBXNativeTarget "makuyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D02A512330CAEE00DFFC55 /* Debug */,
+				F7D02A522330CAEE00DFFC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7D02A532330CAEE00DFFC55 /* Build configuration list for PBXNativeTarget "makuyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7D02A542330CAEE00DFFC55 /* Debug */,
+				F7D02A552330CAEE00DFFC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7D02A2C2330CAEC00DFFC55 /* makuy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7D02A2D2330CAEC00DFFC55 /* makuy.xcdatamodel */,
+			);
+			currentVersion = F7D02A2D2330CAEC00DFFC55 /* makuy.xcdatamodel */;
+			path = makuy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F7D02A1A2330CAEC00DFFC55 /* Project object */;
+}
