@@ -10,9 +10,12 @@ import UIKit
 
 class CustomCell: UITableViewCell {
 
+    @IBOutlet weak var postView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        cellSetup()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -25,4 +28,7 @@ class CustomCell: UITableViewCell {
         super.prepareForReuse()
     }
     
+    func cellSetup() {
+        postView.layer.cornerRadius = 20
+    }
 }

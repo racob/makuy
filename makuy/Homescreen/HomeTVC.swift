@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Floaty
 
 class HomeTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.title = "Makuy"
+        
+        navBarSetup()
+        
+        let floaty = Floaty()
+        floaty.addItem(title: "Hello, World!")
+        tableView.addSubview(floaty)
         
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 200
@@ -27,6 +32,14 @@ class HomeTVC: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    // MARK: - Navigation Bar setup
+    
+    func navBarSetup() {
+        self.navigationItem.title = "Makuy"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+//        self.navigationController?.navigationItem.largeTitleDisplayMode = .always
+    }
 
     // MARK: - Table view data source
 
@@ -38,7 +51,7 @@ class HomeTVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 4
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

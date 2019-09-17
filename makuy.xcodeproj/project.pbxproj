@@ -3,13 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58B2D264F2C3FED2989D931F /* Pods_makuy_makuyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6651E4D3067AA9A7130296 /* Pods_makuy_makuyUITests.framework */; };
+		B42E59DA56A1562E85A8149F /* Pods_makuy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D926685FEEF7DF9BE33D6EC /* Pods_makuy.framework */; };
+		B7ADEFB4A5533E1450D4A293 /* Pods_makuyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2CBF152458AA34E02C7D89 /* Pods_makuyTests.framework */; };
 		F780690B2331278900B2A8F9 /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780690A2331278900B2A8F9 /* HomeTVC.swift */; };
 		F780690E2331283600B2A8F9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780690C2331283600B2A8F9 /* CustomCell.swift */; };
 		F780690F2331283600B2A8F9 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F780690D2331283600B2A8F9 /* CustomCell.xib */; };
+		F780691223314A3800B2A8F9 /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780691123314A3800B2A8F9 /* FormVC.swift */; };
 		F7D02A262330CAEC00DFFC55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A252330CAEC00DFFC55 /* AppDelegate.swift */; };
 		F7D02A2B2330CAEC00DFFC55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D02A292330CAEC00DFFC55 /* Main.storyboard */; };
 		F7D02A2E2330CAEC00DFFC55 /* makuy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A2C2330CAEC00DFFC55 /* makuy.xcdatamodeld */; };
@@ -37,9 +41,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		016DD927D03FDE592E47EF86 /* Pods-makuyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makuyTests.release.xcconfig"; path = "Target Support Files/Pods-makuyTests/Pods-makuyTests.release.xcconfig"; sourceTree = "<group>"; };
+		02313C7B2D15F6C6A6370C53 /* Pods-makuy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makuy.debug.xcconfig"; path = "Target Support Files/Pods-makuy/Pods-makuy.debug.xcconfig"; sourceTree = "<group>"; };
+		03660116C8E1A693F44D406C /* Pods-makuy-makuyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makuy-makuyUITests.release.xcconfig"; path = "Target Support Files/Pods-makuy-makuyUITests/Pods-makuy-makuyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3E6651E4D3067AA9A7130296 /* Pods_makuy_makuyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makuy_makuyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D926685FEEF7DF9BE33D6EC /* Pods_makuy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makuy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67FAACCD4EC60501C868A307 /* Pods-makuyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makuyTests.debug.xcconfig"; path = "Target Support Files/Pods-makuyTests/Pods-makuyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD2CBF152458AA34E02C7D89 /* Pods_makuyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makuyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E9E5756B5EF5532EE6ACE2 /* Pods-makuy-makuyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makuy-makuyUITests.debug.xcconfig"; path = "Target Support Files/Pods-makuy-makuyUITests/Pods-makuy-makuyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7A6501EAAE1024633090C7E /* Pods-makuy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makuy.release.xcconfig"; path = "Target Support Files/Pods-makuy/Pods-makuy.release.xcconfig"; sourceTree = "<group>"; };
 		F780690A2331278900B2A8F9 /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
 		F780690C2331283600B2A8F9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		F780690D2331283600B2A8F9 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		F780691123314A3800B2A8F9 /* FormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVC.swift; sourceTree = "<group>"; };
 		F7D02A222330CAEC00DFFC55 /* makuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = makuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D02A252330CAEC00DFFC55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7D02A2A2330CAEC00DFFC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42E59DA56A1562E85A8149F /* Pods_makuy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7ADEFB4A5533E1450D4A293 /* Pods_makuyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +90,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B2D264F2C3FED2989D931F /* Pods_makuy_makuyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182BB4D98F4058847994A302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D926685FEEF7DF9BE33D6EC /* Pods_makuy.framework */,
+				3E6651E4D3067AA9A7130296 /* Pods_makuy_makuyUITests.framework */,
+				BD2CBF152458AA34E02C7D89 /* Pods_makuyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5C6F07E8EC431CC6E76E320 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02313C7B2D15F6C6A6370C53 /* Pods-makuy.debug.xcconfig */,
+				D7A6501EAAE1024633090C7E /* Pods-makuy.release.xcconfig */,
+				D2E9E5756B5EF5532EE6ACE2 /* Pods-makuy-makuyUITests.debug.xcconfig */,
+				03660116C8E1A693F44D406C /* Pods-makuy-makuyUITests.release.xcconfig */,
+				67FAACCD4EC60501C868A307 /* Pods-makuyTests.debug.xcconfig */,
+				016DD927D03FDE592E47EF86 /* Pods-makuyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F7806910233149F500B2A8F9 /* Add eating event */ = {
+			isa = PBXGroup;
+			children = (
+				F780691123314A3800B2A8F9 /* FormVC.swift */,
+			);
+			path = "Add eating event";
+			sourceTree = "<group>";
+		};
 		F7D02A192330CAEC00DFFC55 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +135,8 @@
 				F7D02A3C2330CAEE00DFFC55 /* makuyTests */,
 				F7D02A472330CAEE00DFFC55 /* makuyUITests */,
 				F7D02A232330CAEC00DFFC55 /* Products */,
+				A5C6F07E8EC431CC6E76E320 /* Pods */,
+				182BB4D98F4058847994A302 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +160,7 @@
 				F7D02A342330CAEE00DFFC55 /* Info.plist */,
 				F7D02A2C2330CAEC00DFFC55 /* makuy.xcdatamodeld */,
 				F7D02A582330CF3500DFFC55 /* Homescreen */,
+				F7806910233149F500B2A8F9 /* Add eating event */,
 			);
 			path = makuy;
 			sourceTree = "<group>";
@@ -149,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7D02A4D2330CAEE00DFFC55 /* Build configuration list for PBXNativeTarget "makuy" */;
 			buildPhases = (
+				4710081BE00A698CB084876F /* [CP] Check Pods Manifest.lock */,
 				F7D02A1E2330CAEC00DFFC55 /* Sources */,
 				F7D02A1F2330CAEC00DFFC55 /* Frameworks */,
 				F7D02A202330CAEC00DFFC55 /* Resources */,
+				96BBD89DB94805A7CFA4FE43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7D02A502330CAEE00DFFC55 /* Build configuration list for PBXNativeTarget "makuyTests" */;
 			buildPhases = (
+				7B9D7E2AB7A71F7C17B036A1 /* [CP] Check Pods Manifest.lock */,
 				F7D02A352330CAEE00DFFC55 /* Sources */,
 				F7D02A362330CAEE00DFFC55 /* Frameworks */,
 				F7D02A372330CAEE00DFFC55 /* Resources */,
@@ -184,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7D02A532330CAEE00DFFC55 /* Build configuration list for PBXNativeTarget "makuyUITests" */;
 			buildPhases = (
+				662E36F137F782EA592DC0B0 /* [CP] Check Pods Manifest.lock */,
 				F7D02A402330CAEE00DFFC55 /* Sources */,
 				F7D02A412330CAEE00DFFC55 /* Frameworks */,
 				F7D02A422330CAEE00DFFC55 /* Resources */,
+				4D1CB3C71AC6A7D30C1E06B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,11 +325,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4710081BE00A698CB084876F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-makuy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D1CB3C71AC6A7D30C1E06B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makuy-makuyUITests/Pods-makuy-makuyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makuy-makuyUITests/Pods-makuy-makuyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makuy-makuyUITests/Pods-makuy-makuyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		662E36F137F782EA592DC0B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-makuy-makuyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B9D7E2AB7A71F7C17B036A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-makuyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96BBD89DB94805A7CFA4FE43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makuy/Pods-makuy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makuy/Pods-makuy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makuy/Pods-makuy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F7D02A1E2330CAEC00DFFC55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F780691223314A3800B2A8F9 /* FormVC.swift in Sources */,
 				F780690B2331278900B2A8F9 /* HomeTVC.swift in Sources */,
 				F7D02A262330CAEC00DFFC55 /* AppDelegate.swift in Sources */,
 				F780690E2331283600B2A8F9 /* CustomCell.swift in Sources */,
@@ -450,6 +610,7 @@
 		};
 		F7D02A4E2330CAEE00DFFC55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02313C7B2D15F6C6A6370C53 /* Pods-makuy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +629,7 @@
 		};
 		F7D02A4F2330CAEE00DFFC55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7A6501EAAE1024633090C7E /* Pods-makuy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -486,6 +648,7 @@
 		};
 		F7D02A512330CAEE00DFFC55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67FAACCD4EC60501C868A307 /* Pods-makuyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +670,7 @@
 		};
 		F7D02A522330CAEE00DFFC55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 016DD927D03FDE592E47EF86 /* Pods-makuyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +692,7 @@
 		};
 		F7D02A542330CAEE00DFFC55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E9E5756B5EF5532EE6ACE2 /* Pods-makuy-makuyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +713,7 @@
 		};
 		F7D02A552330CAEE00DFFC55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03660116C8E1A693F44D406C /* Pods-makuy-makuyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
