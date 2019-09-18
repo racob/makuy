@@ -11,11 +11,18 @@ import UIKit
 class CustomCell: UITableViewCell {
 
     @IBOutlet weak var postView: UIView!
+    @IBOutlet weak var categoryImage: UIImageView!
+    @IBOutlet weak var restaurantName: UILabel!
+    @IBOutlet weak var postDescription: UILabel!
+    @IBOutlet weak var numOfPeople: UILabel!
+    @IBOutlet weak var category: UILabel!
+    @IBOutlet weak var timePosted: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        cellSetup()
+        cellViewSetup()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,7 +35,7 @@ class CustomCell: UITableViewCell {
         super.prepareForReuse()
     }
     
-    func cellSetup() {
+    func cellViewSetup() {
         postView.layer.cornerRadius = 20
     }
 }

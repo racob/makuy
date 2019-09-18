@@ -10,10 +10,11 @@
 		58B2D264F2C3FED2989D931F /* Pods_makuy_makuyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6651E4D3067AA9A7130296 /* Pods_makuy_makuyUITests.framework */; };
 		B42E59DA56A1562E85A8149F /* Pods_makuy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D926685FEEF7DF9BE33D6EC /* Pods_makuy.framework */; };
 		B7ADEFB4A5533E1450D4A293 /* Pods_makuyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD2CBF152458AA34E02C7D89 /* Pods_makuyTests.framework */; };
-		F780690B2331278900B2A8F9 /* HomeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780690A2331278900B2A8F9 /* HomeTVC.swift */; };
 		F780690E2331283600B2A8F9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780690C2331283600B2A8F9 /* CustomCell.swift */; };
 		F780690F2331283600B2A8F9 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F780690D2331283600B2A8F9 /* CustomCell.xib */; };
 		F780691223314A3800B2A8F9 /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F780691123314A3800B2A8F9 /* FormVC.swift */; };
+		F7B462142331D5D300B1E80B /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B462132331D5D300B1E80B /* extensions.swift */; };
+		F7B462162331DA4900B1E80B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B462152331DA4900B1E80B /* HomeVC.swift */; };
 		F7D02A262330CAEC00DFFC55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A252330CAEC00DFFC55 /* AppDelegate.swift */; };
 		F7D02A2B2330CAEC00DFFC55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7D02A292330CAEC00DFFC55 /* Main.storyboard */; };
 		F7D02A2E2330CAEC00DFFC55 /* makuy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7D02A2C2330CAEC00DFFC55 /* makuy.xcdatamodeld */; };
@@ -50,10 +51,11 @@
 		BD2CBF152458AA34E02C7D89 /* Pods_makuyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makuyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E9E5756B5EF5532EE6ACE2 /* Pods-makuy-makuyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makuy-makuyUITests.debug.xcconfig"; path = "Target Support Files/Pods-makuy-makuyUITests/Pods-makuy-makuyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7A6501EAAE1024633090C7E /* Pods-makuy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makuy.release.xcconfig"; path = "Target Support Files/Pods-makuy/Pods-makuy.release.xcconfig"; sourceTree = "<group>"; };
-		F780690A2331278900B2A8F9 /* HomeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTVC.swift; sourceTree = "<group>"; };
 		F780690C2331283600B2A8F9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		F780690D2331283600B2A8F9 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		F780691123314A3800B2A8F9 /* FormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVC.swift; sourceTree = "<group>"; };
+		F7B462132331D5D300B1E80B /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		F7B462152331DA4900B1E80B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F7D02A222330CAEC00DFFC55 /* makuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = makuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D02A252330CAEC00DFFC55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7D02A2A2330CAEC00DFFC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +130,14 @@
 			path = "Add eating event";
 			sourceTree = "<group>";
 		};
+		F7B462122331D5B700B1E80B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F7B462132331D5D300B1E80B /* extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		F7D02A192330CAEC00DFFC55 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +163,7 @@
 		F7D02A242330CAEC00DFFC55 /* makuy */ = {
 			isa = PBXGroup;
 			children = (
+				F7B462122331D5B700B1E80B /* Utils */,
 				F7D02A252330CAEC00DFFC55 /* AppDelegate.swift */,
 				F7D02A292330CAEC00DFFC55 /* Main.storyboard */,
 				F7D02A2F2330CAEE00DFFC55 /* Assets.xcassets */,
@@ -186,7 +197,7 @@
 		F7D02A582330CF3500DFFC55 /* Homescreen */ = {
 			isa = PBXGroup;
 			children = (
-				F780690A2331278900B2A8F9 /* HomeTVC.swift */,
+				F7B462152331DA4900B1E80B /* HomeVC.swift */,
 				F780690C2331283600B2A8F9 /* CustomCell.swift */,
 				F780690D2331283600B2A8F9 /* CustomCell.xib */,
 			);
@@ -434,10 +445,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F780691223314A3800B2A8F9 /* FormVC.swift in Sources */,
-				F780690B2331278900B2A8F9 /* HomeTVC.swift in Sources */,
+				F7B462162331DA4900B1E80B /* HomeVC.swift in Sources */,
 				F7D02A262330CAEC00DFFC55 /* AppDelegate.swift in Sources */,
 				F780690E2331283600B2A8F9 /* CustomCell.swift in Sources */,
 				F7D02A2E2330CAEC00DFFC55 /* makuy.xcdatamodeld in Sources */,
+				F7B462142331D5D300B1E80B /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
