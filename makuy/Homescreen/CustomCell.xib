@@ -89,6 +89,7 @@
                     <constraint firstItem="Laa-eK-c8l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="gaH-wf-hzD"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="category" destination="swK-1N-fuf" id="fgG-7B-Ra1"/>

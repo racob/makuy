@@ -17,26 +17,26 @@ class FormVC: FormViewController {
         navBarSetup()
         
         form +++ Section("Detail")
-            <<< TextRow(){ row in
+            <<< TextRow("restaurantName"){ row in
                 row.title = "Restoran"
                 row.placeholder = "Masukan nama restoran"
             }
-            <<< PhoneRow(){
+            <<< TextRow("description"){
                 $0.title = "Deskripsi"
                 $0.placeholder = "Masukan deskripsi"
             }
             +++ Section()
-            <<< PickerInlineRow<Int>() {
+            <<< PickerInlineRow<Int>("numOfPeople") {
                 $0.title = "Jumlah orang"
                 $0.options = Array(1...99)
                 $0.value = $0.options[0]
             }
-            <<< SegmentedRow<String>("segments"){
+            <<< SegmentedRow<String>("category"){
                 $0.title = "Kategori"
                 $0.options = ["Delivery","Restoran","Bawa sendiri"]
             }
             <<< DecimalRow() {
-                $0.hidden = "$segments != 'Delivery'"
+                $0.hidden = "$category != 'Delivery'"
                 $0.useFormatterDuringInput = true
                 $0.title = "Estimasi Harga"
                 $0.value = 20000
@@ -56,6 +56,21 @@ class FormVC: FormViewController {
     
     @objc func postTapped() {
         self.navigationController!.popViewController(animated: true)
+        postEvent()
+    }
+    
+    func postEvent() {
+        var valuesDictionary = form.values()
+        let defaults = UserDefaults.standard
+        var postArray = defaults.object(forKey:"SavedPostArray") as? [[String:Any?]] ?? []
+        
+        let hour = Calendar.current.component(.hour, from: Date())
+        let minutes = Calendar.current.component(.minute, from: Date())
+        let timePosted: String = "\(hour):\(minutes)"
+        valuesDictionary["timePosted"] = timePosted
+        
+        postArray.append(valuesDictionary)
+        defaults.set(postArray, forKey: "SavedPostArray")
     }
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.prefersLargeTitles = true

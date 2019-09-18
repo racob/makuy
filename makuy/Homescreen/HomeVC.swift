@@ -13,6 +13,10 @@ class HomeVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var floaty: Floaty!
+    @IBOutlet var emptyLabels: [UILabel]!
+    
+    
+    var postArray: [[String : Any?]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +34,21 @@ class HomeVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         navBarSetup()
+        postArray = UserDefaults.standard.object(forKey:"SavedPostArray") as? [[String:Any?]] ?? []
+        emptyLabelDisplay()
+        tableView.reloadData()
+    }
+    
+    func emptyLabelDisplay() {
+        if postArray.count == 0 {
+            for emptyLabel in emptyLabels {
+                emptyLabel.layer.isHidden = false
+            }
+        } else {
+            for emptyLabel in emptyLabels {
+                emptyLabel.layer.isHidden = true
+            }
+        }
     }
     
     func tableViewSetup() {
@@ -65,11 +84,18 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return postArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CustomCell
+        let postDict = postArray[indexPath.row]
+        
+        cell.restaurantName.text = postDict["restaurantName"] as? String
+        cell.postDescription.text = postDict["description"] as? String
+        cell.category.text = postDict["category"] as? String
+        cell.numOfPeople.text = postDict["numOfPeople"] as? String
+        cell.timePosted.text = postDict["timePosted"] as? String
         return cell
     }
     
