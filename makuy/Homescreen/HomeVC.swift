@@ -15,15 +15,13 @@ class HomeVC: UIViewController {
     @IBOutlet weak var floaty: Floaty!
     @IBOutlet var emptyLabels: [UILabel]!
     
-    
     var postArray: [[String : Any?]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-//        navBarSetup()
+
         floatySetup()
         tableViewSetup()
     }
@@ -73,7 +71,7 @@ class HomeVC: UIViewController {
     func navBarSetup() {
         self.navigationItem.title = "Makuy"
         self.navigationController?.navigationBar.prefersLargeTitles = true
-                self.navigationController?.navigationItem.largeTitleDisplayMode = .always
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
 }
 
@@ -90,12 +88,15 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CustomCell
         let postDict = postArray[indexPath.row]
-        
+        let num = postDict["numOfPeople"]!as? Int
         cell.restaurantName.text = postDict["restaurantName"] as? String
         cell.postDescription.text = postDict["description"] as? String
         cell.category.text = postDict["category"] as? String
-        cell.numOfPeople.text = postDict["numOfPeople"] as? String
+        cell.numOfPeople.text = String(num!)
         cell.timePosted.text = postDict["timePosted"] as? String
+        
+        cell.categoryImage.image = UIImage(named: cell.category.text!)
+        cell.categoryImage.alpha = 0.25
         return cell
     }
     
