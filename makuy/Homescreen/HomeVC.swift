@@ -9,6 +9,7 @@
 import UIKit
 import Floaty
 import OnboardKit
+import BiometricAuthentication
 
 class HomeVC: UIViewController {
 
@@ -192,11 +193,21 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: false)
         let cell = tableView.cellForRow(at: indexPath) as! CustomCell
         if cell.joined {
-            postArray.remove(at: indexPath.row)
-            postArray = postArray.reversed()
-            UserDefaults.standard.set(postArray, forKey: "SavedPostArray")
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            emptyLabelDisplay()
+            BioMetricAuthenticator.authenticateWithBioMetrics(reason: "") { (result) in
+                
+                switch result {
+                case .success( _):
+                    print("Authentication Successful")
+                    self.postArray.remove(at: indexPath.row)
+                    self.postArray = self.postArray.reversed()
+                    UserDefaults.standard.set(self.postArray, forKey: "SavedPostArray")
+                    tableView.deleteRows(at: [indexPath], with: .fade)
+                    self.emptyLabelDisplay()
+                case .failure(let error):
+                    print("Authentication Failed")
+                }
+            }
+            
         } else {
             joinAlert(cell: cell, indexPath: indexPath)
         }
@@ -207,9 +218,19 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
                                       message: "Kamu mau ikut makan ini?",
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Iya", style: .default, handler: { action in
-            cell.postView.backgroundColor = #colorLiteral(red: 0.9307132959, green: 0.4353722334, blue: 0.4045291841, alpha: 1)
-            cell.joined = true
-            self.tableView.reloadRows(at: [indexPath], with: UITableView.RowAnimation.none)
+            BioMetricAuthenticator.authenticateWithBioMetrics(reason: "") { (result) in
+                
+                switch result {
+                case .success( _):
+                    print("Authentication Successful")
+                    cell.postView.backgroundColor = #colorLiteral(red: 0.9307132959, green: 0.4353722334, blue: 0.4045291841, alpha: 1)
+                    cell.joined = true
+                    self.tableView.reloadRows(at: [indexPath], with: UITableView.RowAnimation.none)
+                case .failure(let error):
+                    print("Authentication Failed")
+                }
+            }
+            
         }))
         alert.addAction(UIAlertAction(title: "Tidak", style: .cancel))
         self.present(alert, animated: true)

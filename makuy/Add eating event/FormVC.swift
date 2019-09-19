@@ -8,6 +8,7 @@
 
 import UIKit
 import Eureka
+import BiometricAuthentication
 
 class FormVC: FormViewController {
 
@@ -56,8 +57,16 @@ class FormVC: FormViewController {
     }
     
     @objc func postTapped() {
-        self.navigationController!.popViewController(animated: true)
-        postEvent()
+        BioMetricAuthenticator.authenticateWithBioMetrics(reason: "") { (result) in
+            switch result {
+            case .success( _):
+                print("Authentication Successful")
+                self.navigationController!.popViewController(animated: true)
+                self.postEvent()
+            case .failure(let error):
+                print("Authentication Failed")
+            }
+        }
     }
     
     func postEvent() {

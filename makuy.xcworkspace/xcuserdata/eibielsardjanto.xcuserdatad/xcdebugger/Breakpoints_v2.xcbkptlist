@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "makuy/Add eating event/FormVC.swift"
-            timestampString = "590614534.735527"
+            timestampString = "590615852.296178"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "postEvent()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "makuy/Add eating event/FormVC.swift"
-            timestampString = "590614534.735597"
+            timestampString = "590615852.296255"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "postEvent()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "makuy/Add eating event/FormVC.swift"
-            timestampString = "590614534.735646"
+            timestampString = "590615852.296312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "postEvent()"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "makuy/Homescreen/HomeVC.swift"
-            timestampString = "590614534.735688"
+            timestampString = "590615852.296368"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
             landmarkName = "joinAlert(cell:indexPath:)"
             landmarkType = "7">
          </BreakpointContent>
