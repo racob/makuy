@@ -8,6 +8,7 @@
 
 import UIKit
 import Floaty
+import OnboardKit
 
 class HomeVC: UIViewController {
 
@@ -31,8 +32,10 @@ class HomeVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        onboardDisplay()
         navBarSetup()
         postArray = UserDefaults.standard.object(forKey:"SavedPostArray") as? [[String:Any?]] ?? []
+        postArray = postArray.reversed()
         emptyLabelDisplay()
         tableView.reloadData()
     }
@@ -47,6 +50,53 @@ class HomeVC: UIViewController {
                 emptyLabel.layer.isHidden = true
             }
         }
+    }
+    
+    func onboardDisplay() {
+        
+        if !UserDefaults.standard.bool(forKey: "afterFirstUse") {
+            let onboardingPages: [OnboardPage] = {
+                let pageOne = OnboardPage(title: "Hi learner!",
+                                          imageName: "onboard1",
+                                          description: "Kamu mau makan bareng ya?\nKenalan dulu dong!",
+                                          advanceButtonTitle: "",
+                                          actionButtonTitle: "Masukan Nama",
+                                          action: { [weak self] completion in
+                                            self?.showAlert(completion)
+                })
+                
+                let pageTwo = OnboardPage(title: "Ajak makan atau join?",
+                                          imageName: "onboard2",
+                                          description: "Kamu bisa ajak learner lain makan bareng, atau join sama yang sedang cari temen makan!",
+                                          advanceButtonTitle: "Mulai")
+                
+                return [pageOne, pageTwo]
+            }()
+            
+            let onboardingVC = OnboardViewController(pageItems: onboardingPages)
+            onboardingVC.presentFrom(self, animated: true)
+            
+            UserDefaults.standard.set(true, forKey: "afterFirstUse")
+        }
+//        UserDefaults.standard.set(false, forKey: "afterFirstUse")
+    }
+    
+    private func showAlert(_ completion: @escaping (_ success: Bool, _ error: Error?) -> Void) {
+        let alert = UIAlertController(title: "Kenalan yuk!",
+                                      message: "Masukan nama kamu",
+                                      preferredStyle: .alert)
+        alert.addTextField(configurationHandler: { textField in
+            textField.placeholder = "Misalnya Eibiel"
+        })
+        alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+            let name = alert.textFields?.first?.text
+            UserDefaults.standard.set(name, forKey: "username")
+            completion(true, nil)
+        })
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { _ in
+            completion(false, nil)
+        })
+        presentedViewController?.present(alert, animated: true)
     }
     
     func tableViewSetup() {
@@ -69,7 +119,13 @@ class HomeVC: UIViewController {
     }
     
     func navBarSetup() {
-        self.navigationItem.title = "Makuy"
+        let name = UserDefaults.standard.string(forKey: "username")
+        self.navigationItem.title = "Hi \(name ?? "Learner"), makan kuy!"
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.2374646366, green: 0.3458372951, blue: 0.4776223898, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.995991528, green: 0.9961341023, blue: 0.9959602952, alpha: 1)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.2374646366, green: 0.3458372951, blue: 0.4776223898, alpha: 1)]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: #colorLiteral(red: 0.2374646366, green: 0.3458372951, blue: 0.4776223898, alpha: 1)]
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
@@ -88,14 +144,25 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CustomCell
         let postDict = postArray[indexPath.row]
-        let num = postDict["numOfPeople"]!as? Int
-        cell.restaurantName.text = postDict["restaurantName"] as? String
-        cell.postDescription.text = postDict["description"] as? String
-        cell.category.text = postDict["category"] as? String
-        cell.numOfPeople.text = String(num!)
-        cell.timePosted.text = postDict["timePosted"] as? String
+        let num = postDict["numOfPeople"]! as? Int
+        let desc = postDict["description"] as? String
+        let category = postDict["category"] as? String
+        let price = postDict["price"] as? Int
         
-        cell.categoryImage.image = UIImage(named: cell.category.text!)
+        cell.restaurantName.text = postDict["restaurantName"] as? String
+        cell.postDescription.text = "▶︎ \(desc!)"
+        cell.category.text = "\(category!)  "
+        cell.numOfPeople.text = "☺︎ 0 / \(num!)"
+        cell.timePosted.text = postDict["timePosted"] as? String
+        cell.host.text = "By Eibiel  "
+        
+        if category! == "Delivery" {
+            cell.price.text = "Rp \(price!)"
+        } else {
+            cell.price.isHidden = true
+        }
+        
+        cell.categoryImage.image = UIImage(named: category!)
         cell.categoryImage.alpha = 0.25
         return cell
     }

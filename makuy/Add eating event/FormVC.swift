@@ -25,7 +25,7 @@ class FormVC: FormViewController {
                 $0.title = "Deskripsi"
                 $0.placeholder = "Masukan deskripsi"
             }
-            +++ Section()
+            +++ Section(footer: "Nama restoran tidak akan ditampilkan kalau kamu memilih kategori Bawa Sendiri")
             <<< PickerInlineRow<Int>("numOfPeople") {
                 $0.title = "Jumlah orang"
                 $0.options = Array(1...99)
@@ -34,8 +34,9 @@ class FormVC: FormViewController {
             <<< SegmentedRow<String>("category"){
                 $0.title = "Kategori"
                 $0.options = ["Delivery","Restoran","Bawa sendiri"]
+                $0.value = $0.options![0]
             }
-            <<< DecimalRow() {
+            <<< DecimalRow("price") {
                 $0.hidden = "$category != 'Delivery'"
                 $0.useFormatterDuringInput = true
                 $0.title = "Estimasi Harga"
@@ -61,12 +62,15 @@ class FormVC: FormViewController {
     
     func postEvent() {
         var valuesDictionary = form.values()
+        if valuesDictionary["category"]!! as! String == "Bawa sendiri" {
+            valuesDictionary["restaurantName"] = "Bawa makan sendiri"
+        }
         let defaults = UserDefaults.standard
         var postArray = defaults.object(forKey:"SavedPostArray") as? [[String:Any?]] ?? []
         
         let hour = Calendar.current.component(.hour, from: Date())
         let minutes = Calendar.current.component(.minute, from: Date())
-        let timePosted: String = "\(hour):\(minutes)"
+        let timePosted: String = String(format:"%02i:%02i", hour, minutes)
         valuesDictionary["timePosted"] = timePosted
         
         postArray.append(valuesDictionary)

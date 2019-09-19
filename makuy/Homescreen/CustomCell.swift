@@ -17,6 +17,8 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var numOfPeople: UILabel!
     @IBOutlet weak var category: UILabel!
     @IBOutlet weak var timePosted: UILabel!
+    @IBOutlet weak var host: UILabel!
+    @IBOutlet weak var price: UILabel!
     
     
     override func awakeFromNib() {
@@ -37,5 +39,7 @@ class CustomCell: UITableViewCell {
     
     func cellViewSetup() {
         postView.layer.cornerRadius = 20
+        category.layer.cornerRadius = 5
+        host.layer.cornerRadius = 5
     }
 }
