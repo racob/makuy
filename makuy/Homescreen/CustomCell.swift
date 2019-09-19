@@ -20,6 +20,7 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var host: UILabel!
     @IBOutlet weak var price: UILabel!
     
+    var joined = false
     
     override func awakeFromNib() {
         super.awakeFromNib()

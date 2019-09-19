@@ -105,13 +105,23 @@
       "scale" : "1x"
     },
     {
+      "idiom" : "mac",
       "size" : "256x256",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "mac",
+      "size" : "256x256",
+      "scale" : "2x"
+    },
+    {
+      "size" : "512x512",
       "idiom" : "mac",
       "filename" : "Icon.png",
       "scale" : "1x"
     },
     {
-      "size" : "256x256",
+      "size" : "512x512",
       "idiom" : "mac",
       "filename" : "Icon@2x.png",
       "scale" : "2x"
