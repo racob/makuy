@@ -98,7 +98,6 @@ class HomeVC: UIViewController {
             let onboardingVC = OnboardViewController(pageItems: onboardingPages, appearanceConfiguration: appearanceConfiguration)
             onboardingVC.presentFrom(self, animated: true)
             
-            UserDefaults.standard.set(true, forKey: "afterFirstUse")
         }
 //        UserDefaults.standard.set(false, forKey: "afterFirstUse")
     }
@@ -113,6 +112,7 @@ class HomeVC: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
             let name = alert.textFields?.first?.text
             UserDefaults.standard.set(name, forKey: "username")
+            UserDefaults.standard.set(true, forKey: "afterFirstUse")
             completion(true, nil)
         })
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel) { _ in
